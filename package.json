@@ -1,0 +1,24 @@
+{
+  "name": "hands",
+  "version": "1.0.0",
+  "description": "Display of hands for teaching purposes",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewstart/hands.git"
+  },
+  "author": "Andrew Start <github.com/andrewstart>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewstart/hands/issues"
+  },
+  "homepage": "https://github.com/andrewstart/hands#readme",
+  "dependencies": {
+    "keyboardjs": "^2.5.1",
+    "pixi.js": "^5.2.3"
+  }
+}
