@@ -6,7 +6,7 @@ const data = {
     framerate: 24,
     totalFrames: 1,
     assets: {
-        "hand": "images/hand.shapes.txt"
+        "Hands": "images/Hands.shapes.txt"
     },
     lib: {},
     shapes: {},
@@ -30,7 +30,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[0]);
+            .drawCommands(data.shapes.Hands[0]);
         this.addChild(instance1);
     }
     }
@@ -39,7 +39,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[1]);
+            .drawCommands(data.shapes.Hands[1]);
         this.addChild(instance1);
     }
     }
@@ -48,12 +48,12 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[2]);
+            .drawCommands(data.shapes.Hands[2]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.thumb_back = class extends MovieClip {
+    data.lib.BackThumb = class extends MovieClip {
         constructor() {
         super({
             duration: 2
@@ -75,7 +75,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[3]);
+            .drawCommands(data.shapes.Hands[3]);
         this.addChild(instance1);
     }
     }
@@ -84,12 +84,12 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[4]);
+            .drawCommands(data.shapes.Hands[4]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.index_back = class extends MovieClip {
+    data.lib.BackIndex = class extends MovieClip {
         constructor() {
         super({
             duration: 2
@@ -111,7 +111,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[5]);
+            .drawCommands(data.shapes.Hands[5]);
         this.addChild(instance1);
     }
     }
@@ -120,12 +120,12 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[6]);
+            .drawCommands(data.shapes.Hands[6]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.middle_back = class extends MovieClip {
+    data.lib.BackMiddle = class extends MovieClip {
         constructor() {
         super({
             duration: 2
@@ -147,7 +147,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[7]);
+            .drawCommands(data.shapes.Hands[7]);
         this.addChild(instance1);
     }
     }
@@ -156,12 +156,12 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[8]);
+            .drawCommands(data.shapes.Hands[8]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.ring_back = class extends MovieClip {
+    data.lib.BackRing = class extends MovieClip {
         constructor() {
         super({
             duration: 2
@@ -183,7 +183,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[9]);
+            .drawCommands(data.shapes.Hands[9]);
         this.addChild(instance1);
     }
     }
@@ -192,12 +192,12 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[10]);
+            .drawCommands(data.shapes.Hands[10]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.pinky_back = class extends MovieClip {
+    data.lib.BackPinky = class extends MovieClip {
         constructor() {
         super({
             duration: 2
@@ -215,22 +215,22 @@ const data = {
     }
     }
 
-    data.lib.hand_back = class extends Container {
+    data.lib.BackHand = class extends Container {
         constructor() {
         super();
-        const instance6 = new data.lib.pinky_back()
+        const instance6 = new data.lib.BackPinky()
             .setTransform(34, 9);
         this[instance6.name = "pinky"] = instance6;
-        const instance5 = new data.lib.ring_back()
+        const instance5 = new data.lib.BackRing()
             .setTransform(63.65, 34);
         this[instance5.name = "ring"] = instance5;
-        const instance4 = new data.lib.middle_back()
+        const instance4 = new data.lib.BackMiddle()
             .setTransform(16, 17.1);
         this[instance4.name = "middle"] = instance4;
-        const instance3 = new data.lib.index_back()
+        const instance3 = new data.lib.BackIndex()
             .setTransform(48);
         this[instance3.name = "index"] = instance3;
-        const instance2 = new data.lib.thumb_back()
+        const instance2 = new data.lib.BackThumb()
             .setTransform(29, 96.7);
         this[instance2.name = "thumb"] = instance2;
         const instance1 = new data.lib.hand_base()
@@ -244,7 +244,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[11]);
+            .drawCommands(data.shapes.Hands[11]);
         this.addChild(instance1);
     }
     }
@@ -253,12 +253,12 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[12]);
+            .drawCommands(data.shapes.Hands[12]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.thumb_fore = class extends MovieClip {
+    data.lib.ThumbFore = class extends MovieClip {
         constructor() {
         super({
             duration: 2
@@ -280,7 +280,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[13]);
+            .drawCommands(data.shapes.Hands[13]);
         this.addChild(instance1);
     }
     }
@@ -289,12 +289,12 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[14]);
+            .drawCommands(data.shapes.Hands[14]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.index_fore = class extends MovieClip {
+    data.lib.ForeIndex = class extends MovieClip {
         constructor() {
         super({
             duration: 2
@@ -316,7 +316,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[15]);
+            .drawCommands(data.shapes.Hands[15]);
         this.addChild(instance1);
     }
     }
@@ -325,12 +325,12 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[16]);
+            .drawCommands(data.shapes.Hands[16]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.middle_fore = class extends MovieClip {
+    data.lib.ForeMiddle = class extends MovieClip {
         constructor() {
         super({
             duration: 2
@@ -352,7 +352,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[17]);
+            .drawCommands(data.shapes.Hands[17]);
         this.addChild(instance1);
     }
     }
@@ -361,12 +361,12 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[18]);
+            .drawCommands(data.shapes.Hands[18]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.ring_fore = class extends MovieClip {
+    data.lib.ForeRing = class extends MovieClip {
         constructor() {
         super({
             duration: 2
@@ -388,7 +388,7 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[19]);
+            .drawCommands(data.shapes.Hands[19]);
         this.addChild(instance1);
     }
     }
@@ -397,12 +397,12 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[20]);
+            .drawCommands(data.shapes.Hands[20]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.pinky_fore = class extends MovieClip {
+    data.lib.ForePinky = class extends MovieClip {
         constructor() {
         super({
             duration: 2
@@ -424,64 +424,66 @@ const data = {
         constructor() {
         super();
         const instance1 = new Graphics()
-            .drawCommands(data.shapes.hand[21]);
+            .drawCommands(data.shapes.Hands[21]);
         this.addChild(instance1);
     }
     }
 
-    data.lib.hand_fore = class extends Container {
+    data.lib.ForeHand = class extends Container {
         constructor() {
         super();
         const instance6 = new data.lib.base_hand()
             .setTransform(-54.95, -351.5);
         this[instance6.name = "base"] = instance6;
-        const instance5 = new data.lib.pinky_fore()
+        const instance5 = new data.lib.ForePinky()
             .setTransform(113.95, 33.95);
         this[instance5.name = "pinky"] = instance5;
-        const instance4 = new data.lib.ring_fore()
+        const instance4 = new data.lib.ForeRing()
             .setTransform(114, 34);
         this[instance4.name = "ring"] = instance4;
-        const instance3 = new data.lib.middle_fore()
+        const instance3 = new data.lib.ForeMiddle()
             .setTransform(114, 33);
         this[instance3.name = "middle"] = instance3;
-        const instance2 = new data.lib.index_fore()
+        const instance2 = new data.lib.ForeIndex()
             .setTransform(114, 34.95);
         this[instance2.name = "index"] = instance2;
-        const instance1 = new data.lib.thumb_fore()
+        const instance1 = new data.lib.ThumbFore()
             .setTransform(367, 72);
         this[instance1.name = "thumb"] = instance1;
         this.addChild(instance6, instance5, instance4, instance3, instance2, instance1);
     }
     }
 
-    data.lib.HandClip = class extends Container {
+    data.lib.Hand = class extends Container {
         constructor() {
         super();
-        const instance2 = new data.lib.hand_fore()
+        const instance2 = new data.lib.ForeHand()
             .setTransform(-179.6, -362.1);
         this[instance2.name = "fore"] = instance2;
-        const instance1 = new data.lib.hand_back()
+        const instance1 = new data.lib.BackHand()
             .setTransform(-182.05, -421.85);
         this[instance1.name = "back"] = instance1;
         this.addChild(instance2, instance1);
     }
     }
 
-    data.lib.hand = class extends MovieClip {
+    data.lib.Hands = class extends MovieClip {
         constructor() {
         super({
             duration: 1,
             framerate: 24
         });
-        const instance2 = new data.lib.HandClip()
+        const instance2 = new data.lib.Hand()
             .setTransform(329.45, 729.6, 1, 1, 0, 0, 3.142);
-        const instance1 = new data.lib.HandClip()
+        this[instance2.name = "left"] = instance2;
+        const instance1 = new data.lib.Hand()
             .setTransform(822.75, 731.6);
+        this[instance1.name = "right"] = instance1;
         this.addChild(instance2, instance1);
     }
     }
 
-    data.stage = data.lib.hand;
+    data.stage = data.lib.Hands;
 
     }
 };
