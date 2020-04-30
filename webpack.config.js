@@ -28,7 +28,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({}),
+    new HtmlWebpackPlugin({
+        title: 'Hand Counting Tool'
+    }),
     new CopyPlugin([
       { from: 'src/assets/images', to: 'images' },
     ]),

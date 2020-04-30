@@ -20,12 +20,15 @@ interface Finger
 async function main()
 {
 	const {default: art} = await import('./assets/hands.js');
+	const width = window.innerWidth;
+	const height = window.innerHeight;
 	const scene = new animate.Scene({
-		width: art.width,
-		height: art.height,
+		width: width,
+		height: height,
 		backgroundColor: art.background,
 		antialias: true,
-		view: document.createElement('canvas')
+		view: document.createElement('canvas'),
+		resizeTo: window
 	});
 	document.body.appendChild(scene.view);
 	art.setup(animate);
@@ -127,7 +130,24 @@ async function main()
 
 	await new Promise(resolve => scene.load(art as any, resolve));
 
-	(window as any).stage = scene.instance;
+	const stage = scene.instance;
+
+	function center()
+	{
+		const renderWidth = scene.renderer.width;
+		const renderHeight = scene.renderer.height;
+		const scale = Math.min(renderWidth / art.width, renderHeight / art.height);
+		stage.x = (renderWidth - art.width * scale) / 2;
+		stage.y = (renderHeight - art.height * scale) / 2;
+		stage.scale.set(scale);
+	}
+	// do a resize immediately
+	center();
+
+	window.addEventListener('resize', () => {
+		scene.resize();
+		center();
+	});
 }
 
 main();
