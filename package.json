@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "run": "http-server dist",
+    "run-local": "http-server dist",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/andrewstart/hands#readme",
   "dependencies": {
     "keyboardjs": "^2.5.1",
-    "pixi-animate": "2.0.0-rc4",
+    "pixi-animate": "2.0.0-rc5",
     "pixi.js": "^5.2.3"
   },
   "devDependencies": {

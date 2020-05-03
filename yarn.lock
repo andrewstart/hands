@@ -2953,10 +2953,10 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
-pixi-animate@2.0.0-rc4:
-  version "2.0.0-rc4"
-  resolved "https://registry.yarnpkg.com/pixi-animate/-/pixi-animate-2.0.0-rc4.tgz#d8f6008dbaeaf599349fa9f12eab7434566d2e71"
-  integrity sha512-dt3KLVISTWWmHDlY0f/A+XCKZSkBK4XhHZEc9z0UOcfVLBwevNLnUDdWZGQ/MKWQLnV3W+hemzYhy4GZhVlRsQ==
+pixi-animate@2.0.0-rc5:
+  version "2.0.0-rc5"
+  resolved "https://registry.yarnpkg.com/pixi-animate/-/pixi-animate-2.0.0-rc5.tgz#dacd9662935b180e6b36bcaa361a1ab38e9a708b"
+  integrity sha512-3EL+NB9Iit7gXSUtMqvfRr3vNdmTRhc4ziBfiHWtBAlw0GMuCHjBtWbI6ID/5tgq5uLnSXHwrDho+xG4CQTB2w==
 
 pixi.js@^5.2.3:
   version "5.2.3"

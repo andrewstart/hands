@@ -1,5 +1,5 @@
-import * as pixi from 'pixi.js';
 import * as animate from 'pixi-animate';
+import type Art from './assets/hands';
 
 type Digit = 'thumb'|'pinky'|'index'|'middle'|'ring';
 interface Hand
@@ -63,7 +63,7 @@ async function main()
 	art.lib.ForeRing = mixFinger(art.lib.ForeRing);
 	art.lib.ForePinky = mixFinger(art.lib.ForePinky);
 
-	function mixFacing(facing:typeof art.lib.BackHand)
+	function mixFacing(facing:typeof Art.lib.BackHand)
 	{
 		return class extends facing implements HandFacing
 		{
@@ -98,16 +98,19 @@ async function main()
 	art.lib.BackHand = mixFacing(art.lib.BackHand);
 	art.lib.ForeHand = mixFacing(art.lib.ForeHand);
 
-	function mixHand(hand: typeof art.lib.Hand)
+	function mixHand(hand: typeof Art.lib.Hand)
 	{
 		return class extends hand implements Hand
 		{
+			public back: Art.lib.BackHand & HandFacing;
+			public fore: Art.lib.ForeHand & HandFacing;
+
 			constructor()
 			{
 				super();
 
-				(this.fore as any).owner = this;
-				(this.back as any).owner = this;
+				this.fore.owner = this;
+				this.back.owner = this;
 
 				this.toggleFacing(this.fore);
 			}
